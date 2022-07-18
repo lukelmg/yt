@@ -10,12 +10,12 @@ async function load() {
     var output;
     for (i = 0; i < (endCount - startCount + 1); i = i + (123 * multiplier)) {
         output = (i + startCount);
-        document.getElementsByClassName("owner-sub-count")[0].innerHTML = numberWithCommas(output) + ' subscribers';
+        document.getElementsByClassName("style-scope yt-formatted-string bold")[1].innerHTML = numberWithCommas(output) + ' views';
         await timer(delay); // then the created Promise can be awaited
     }
     while (output != endCount) {
         output++;
-        document.getElementsByClassName("owner-sub-count")[0].innerHTML = numberWithCommas(output) + ' subscribers';
+        document.getElementsByClassName("style-scope yt-formatted-string bold")[1].innerHTML = numberWithCommas(output) + ' views';
     }
 }
 
