@@ -13,7 +13,7 @@ async function load() {
         document.getElementById("subscriber-count").innerHTML = numberWithCommas(output) + ' subscribers';
         await timer(delay); // then the created Promise can be awaited
     }
-    if (output != endCount) {
+    while (output != endCount) {
         output++;
         document.getElementById("subscriber-count").innerHTML = numberWithCommas(output) + ' subscribers';
     }
