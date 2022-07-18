@@ -9,7 +9,7 @@ async function load() {
     var output = startCount;
     while (output != endCount) {
         output = output + multiplier;
-        document.getElementById("style-scope yt-formatted-string bold")[0].innerHTML = numberWithCommas(output) + ' views';
+        document.getElementsByClassName("style-scope yt-formatted-string bold")[0].innerHTML = numberWithCommas(output) + ' views';
         await timer(delay)
     }
         output = endCount;
